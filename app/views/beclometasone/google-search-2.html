@@ -1,0 +1,67 @@
+{% extends 'layouts/layout-google.html' %}
+
+{% block pageTitle %}
+  NHS.UK prototype Kit - Content page template
+{% endblock %}
+
+{% block beforeContent %}
+    <header class="nhsuk-header nhsuk-header--transactional" role="banner" style="background-color:#fff;">
+  <div class="nhsuk-width-container nhsuk-header__container">
+    <div class="nhsuk-header__logo">
+            <p style="font-size:13px;">About</p>
+    </div>
+    
+    
+  </div>
+</header>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row" >
+
+    <div style="text-align:center;" class="nhsuk-u-margin-bottom-7">
+
+
+
+      <img src="/../images/googlelogo_color_272x92dp.png" width="40%" />
+
+    </div>  
+
+
+
+
+
+  </div>
+
+  <div class="nhsuk-grid-row">
+
+        <form action="/beclometasone/google-results-2" method="post">
+          <div style="text-align:center;">
+          <input class="nhsuk-input nhsuk-input--width-30" id="google" name="google" value="{{ data['google'] }}" type="text" style="padding-left:12px;padding-top:6px;border-radius:8px;border:1px solid #dfe1e5;box-shadow:none;border-radius:24px;z-index:3;height:44px;margin:0 auto;border-color:rgba(223,225,229,0);box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);">
+          </div>
+
+          <div style="text-align:center;" class="nhsuk-u-padding-top-3">
+          <button type="submit" style="background-color: #f2f2f2;border: 1px solid #f2f2f2;border-radius: 4px;color: #5F6368;cursor: pointer;font-family: arial,sans-serif;font-size: 14px;margin: 11px 4px;min-width: 54px;padding: 0 16px;text-align: center;height: 36px;line-height: 27px;">
+            Google search
+          </button>
+          <button type="submit" style="background-color: #f2f2f2;border: 1px solid #f2f2f2;border-radius: 4px;color: #5F6368;cursor: pointer;font-family: arial,sans-serif;font-size: 14px;margin: 11px 4px;min-width: 54px;padding: 0 16px;text-align: center;height: 36px;line-height: 27px;">
+            I’m feeling lucky
+          </button>
+          </div>
+        </form>
+
+
+
+
+
+
+            
+    </div>  
+
+    <div class="nhsuk-grid-column-one-quarter">
+    
+
+
+    </div>
+  </div>
+{% endblock %}
